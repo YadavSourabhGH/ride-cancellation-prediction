@@ -1,0 +1,71 @@
+{
+  "raw_rows": 6745,
+  "raw_columns": 6,
+  "duplicate_rows": 0,
+  "missing_values": {
+    "Request id": 0,
+    "Pickup point": 0,
+    "Driver id": 2650,
+    "Status": 0,
+    "Request timestamp": 0,
+    "Drop timestamp": 3914
+  },
+  "status_counts": {
+    "Trip Completed": 2831,
+    "No Cars Available": 2650,
+    "Cancelled": 1264
+  },
+  "driver_cancel_rate": 0.18739807264640473,
+  "completed_rate": 0.4197183098591549,
+  "no_car_rate": 0.39288361749444034,
+  "train_rows": 5058,
+  "test_rows": 1687,
+  "selected_model": "random_forest",
+  "metrics": [
+    {
+      "model": "random_forest",
+      "roc_auc": 0.7639462094562779,
+      "average_precision": 0.37312052750795394,
+      "precision": 0.3376792698826597,
+      "recall": 0.819620253164557,
+      "f1": 0.47830101569713757,
+      "accuracy": 0.6650859513930053
+    },
+    {
+      "model": "logistic_regression",
+      "roc_auc": 0.7520116056837383,
+      "average_precision": 0.3533331848020625,
+      "precision": 0.31257208765859285,
+      "recall": 0.8575949367088608,
+      "f1": 0.45815722738799664,
+      "accuracy": 0.6200355660936574
+    }
+  ],
+  "test_classification_report": {
+    "0": {
+      "precision": 0.9380434782608695,
+      "recall": 0.6294675419401896,
+      "f1-score": 0.7533828022697512,
+      "support": 1371.0
+    },
+    "1": {
+      "precision": 0.3376792698826597,
+      "recall": 0.819620253164557,
+      "f1-score": 0.47830101569713757,
+      "support": 316.0
+    },
+    "accuracy": 0.6650859513930053,
+    "macro avg": {
+      "precision": 0.6378613740717647,
+      "recall": 0.7245438975523733,
+      "f1-score": 0.6158419089834444,
+      "support": 1687.0
+    },
+    "weighted avg": {
+      "precision": 0.8255864006986204,
+      "recall": 0.6650859513930053,
+      "f1-score": 0.701855923457098,
+      "support": 1687.0
+    }
+  }
+}
