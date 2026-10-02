@@ -1,11 +1,12 @@
 # 🚕 Ride Cancellation Risk Prediction — ML Case Study 66
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.30+-FF4B4B.svg)](https://streamlit.io/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ride-cancellation-prediction.streamlit.app/)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.4+-F7931E.svg)](https://scikit-learn.org/)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-YadavSourabhGH%2Fride--cancellation--prediction-181717.svg?logo=github)](https://github.com/YadavSourabhGH/ride-cancellation-prediction)
 
-> **Repository URL**: [https://github.com/YadavSourabhGH/ride-cancellation-prediction](https://github.com/YadavSourabhGH/ride-cancellation-prediction)
+> 🌐 **Live Web Application**: [https://ride-cancellation-prediction.streamlit.app/](https://ride-cancellation-prediction.streamlit.app/)  
+> 📦 **GitHub Repository**: [https://github.com/YadavSourabhGH/ride-cancellation-prediction](https://github.com/YadavSourabhGH/ride-cancellation-prediction)
 
 An end-to-end Machine Learning case study that estimates ride cancellation risk at the exact moment a booking request is initiated, using strictly pre-assignment request-time features. This system includes an end-to-end data pipeline, feature engineering, exploratory data analysis (EDA), comparative model training (Random Forest vs. Logistic Regression), evaluation metrics, and an interactive **Streamlit** web application.
 
@@ -135,10 +136,12 @@ The pipeline uses `scikit-learn` `ColumnTransformer` with `Pipeline`:
 2. **Random Forest Classifier:** Ensemble (350 estimators, `min_samples_leaf=8`, balanced weights).
 
 ### 5. Interactive Streamlit Web Application
-Located in [`app/streamlit_app.py`](app/streamlit_app.py):
-- Interactive UI allowing operations managers or users to choose pickup location, request hour, day, and month.
-- Computes real-time cancellation probability using `ride_cancellation_model.joblib`.
-- Flags requests as **Higher risk** ($\ge 50\%$) or **Lower risk** ($< 50\%$) with contextual advisory messaging.
+- **Live Deployment:** [https://ride-cancellation-prediction.streamlit.app/](https://ride-cancellation-prediction.streamlit.app/)
+- **Code:** [`app/streamlit_app.py`](app/streamlit_app.py)
+- **Features:**
+  - Interactive UI allowing operations managers or users to choose pickup location, request hour, day, and month.
+  - Computes real-time cancellation probability using `ride_cancellation_model.joblib`.
+  - Flags requests as **Higher risk** ($\ge 50\%$) or **Lower risk** ($< 50\%$) with contextual advisory messaging.
 
 ---
 
