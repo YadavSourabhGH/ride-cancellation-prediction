@@ -3,4 +3,4 @@ scikit-learn
 matplotlib
 seaborn
 joblib
-streamlit
+streamlit>=1.46
